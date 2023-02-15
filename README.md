@@ -1,6 +1,6 @@
 <a name="mantis"></a>
 # Mantis AR Glasses
-An open source smart glasses
+Open source smart glasses
 
 ![alt text](https://i.imgur.com/jm8B8wC.png)
 
@@ -9,9 +9,9 @@ An open source smart glasses
 
 
 - Use a bluetooth multimeter and display the obtained data on the screen of the glasses.
-- View the temperatures of electronic circuits with the MLX90640 thermal camera.
+- View the temperatures of electronic circuits with the MLX90640 thermal camera, displaying the video and the number data in the screen.
 
-With these features, the Mantis AR Glasses wearer will be able to use a multimeter from the glasses and monitor circuit temperatures.
+With these features, the Mantis AR Glasses wearer will be able to use the multimeter directly with the glasses and monitor circuit temperatures.
 
 > ***This project has been realized by the students of the department of electronics of the institute CIFP Don Bosco LHII.***
 
@@ -47,7 +47,7 @@ One advantage of our glasses is that as they are open source, anyone with suffic
 
 <a name="reverse"></a>
 ## Reverse engineering
-Before starting to design the parts, program or design the electronic circuits, we had to know how a smart glasses were made inside, so we disassembled the Vuxiz Blade to have a clearer idea of how to realize our project.
+Before starting to design the parts, program or design the electronic circuits, we had to know how smart glasses were made on the inside, so we disassembled the Vuxiz Blade to have a clearer idea of how to realize our project.
 
 <a name="vuzixblade"></a>
 ### Vuzix Blade
@@ -57,9 +57,6 @@ We had a better understanding of the required hardware after disassembling the s
 <a name="mantisglasses"></a>
 ### Mantis Glasses
 ![alt text](https://i.imgur.com/GydCLwF.jpg)
-
-![alt text](https://i.imgur.com/MCsBqeJ.png)
-
 In this photo, you can see the components we used for our glasses based on the Vuzix Blade.
 
 <a name="whatweneed"></a>
@@ -68,15 +65,15 @@ In this photo, you can see the components we used for our glasses based on the V
 ## List of materials
 Here is a detailed list of what we need to build our own smart glasses
 
-- Microcontroller board (e.g. Arduino or ESP32)
+- Microcontroller board (we reccomend and ESP32 or higher ram device)
 - Display module (e.g. OLED or TFT)
 - Micro-USB cable for programming and powering the board
 - Lithium-ion battery or power bank
-- 3D printer to print the frame
-- Light reflective material to display the screen
+- 3D printer and filament to print the frame
+- Light reflective material to display the screen (better if it's transparent)
 - Power management circuit
-- Wi-Fi or Bluetooth module
-- Sensors (e.g. accelerometer, gyroscope, proximity)
+- Wi-Fi or Bluetooth module (in case ypu are not using a board which already comes with it) 
+- Sensors (e.g. accelerometer, gyroscope, proximity, we did not use them but might upload an upgrade with them)
 - Buttons or touchpad for user input
 - Wiring and cables to connect the components
 - A software development kit and libraries to program the glasses.
@@ -150,7 +147,7 @@ And a window will open where we can look for the name of the library:
 
 <a name="selectdriver"></a>
 ### Select the driver of our display
-Once we have installed the TFT_eSPI library, we need to locate the library folder, which is located in the Arduino folder.
+Once we have installed the TFT_eSPI library, we need to locate the library folder, which is located in the Arduino folder. In our case:
 `C:\Users\Carlos\This PC\Documents\Arduino\libraries\TFT_eSPI`
 Next, we need to edit the file named
 `User_Setup_Select.h`
@@ -181,6 +178,7 @@ It should look something like this:
 ## Thanks and refereces
 
 Thanks to the electronics maintenance teachers for all the help offered during the project.
+
 ![alt text](https://i.imgur.com/BMM94Ca.jpg)
 
 <a name="referenecs"></a>
@@ -201,7 +199,7 @@ Thanks to the electronics maintenance teachers for all the help offered during t
 ## Disclaimer
 ![alt text](https://i.imgur.com/LufqfRG.png)
 
-The glasses are not designed for use in devices or situations where there may be physical injury if the software has errors.
+We are not responsible for any error, damage of the components or physical injury. Do this project under your own responsibility.
 
 
 
